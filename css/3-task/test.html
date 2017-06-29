@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.demo {
+			width: 980px;
+			height: 500px;
+			background: red;
+			overflow: hidden;
+		}
+		.demo div {
+			margin: 10% 5%;
+			background: green;
+		}
+
+		.box {
+			background: #999;
+			padding: 10px;
+		}
+		input {
+			position: absolute;
+			top: 234px;
+			width: 160px;
+			height: 32px;
+			font-size: 100%;
+		}
+
+		/*calc() 计算元素的宽度*/
+		.calc {
+			width: 300px;
+			background: #60f;
+			padding: 3px 0;
+		}
+		.inner {
+			background: #f60;
+			height: 50px;
+			padding: 10px;
+			border: 5px solid green;
+			width: 90%;
+			width: -moz-calc(100% - (10px + 5px) * 2);
+			width: -webkit-calc(100% - (10px + 5px) * 2);
+			width: -calc(100% - (10px + 5px) * 2);
+		}
+/* 无依赖的绝对定位*/
+
+	 .a{
+	 	width: 300px;
+	 	height: 200px;
+	 	border: 1px solid #000;
+	 }
+	 .a i {
+		position: absolute;
+		background: red;
+		margin: -16px 25px;
+	 }
+	</style>
+</head>
+<body>
+<!-- 	<div class="demo">
+		<div>div设置marign： 10% 5%</div>
+	</div> 
+	<div class="box">
+		<img src="http://img.mukewang.com/54447b06000171a002560191.jpg" alt="ss" width="256" height="191" id="img">
+	</div>
+	<input type="button" id="btn" value="图片absolute">
+	<script type="text/javascript">
+		
+		var btn = document.getElementById("btn"),img = document.getElementById("img");
+
+/*		btn.onclick = function() {
+			if (img.style.position === "absolute") {
+				img.style.position = "";
+				btn.value = "图片aboslute"
+
+			}else {
+				img.style.position = "absolute";
+				btn.value = "去掉absolute";
+			}
+		}*/
+
+		if (btn != null && img != null) {
+
+			btn.onclick = function() {
+
+				console.log(this.absolute);
+				if (this.absolute) {
+					img.style.position = "";
+					this.value = "图片absolute化";
+					this.absolute = false;
+				}else {
+					img.style.position = "absolute";
+					this.value = "图片去absolute";
+					this.absolute = true
+				}
+			}
+		}
+
+	</script>
+	-->
+	<div class="calc">
+		<div class="inner"></div>
+	</div>
+
+	<div class="a">
+		<p>ssss</p>
+		<i>bbbb</i>
+	</div>
+</body>
+</html>
