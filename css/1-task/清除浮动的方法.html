@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.outer {
+			border: 1px solid black;
+			width: 300px;
+		}
+		.inner {
+			width: 50px;
+			height: 50px;
+			background-color: #ff4400;
+			border: 1px solid #000;
+			margin-right: 20px;
+			float: left;
+		}
+		.footer {
+			background: #005fc4;
+			width: 200px;
+			height: 100px;		
+		}
+		/*1.1.额外标签法 
+		.clearFix {
+			clear: left; 此方法不适合大量清除float使用
+		}*/
+
+		/*2,给父级添加使用after伪元素; 最简单的方法
+		.clearFix:after {
+			content: "";
+			display: block;
+			clear: both;   
+		}*/
+
+		/*3.给父元素指定高度，在没有要求指定高度的下不能使用
+		.clearFix {
+			height: 52px;
+		}*/
+
+		/*4.overflow:hidden属性， 隐藏超出内容
+		.clearFix {
+			overflow: hidden;
+			zoom: 1; 兼容ie
+		}*/
+		/*5.父元素也浮动. 但和父元素平级的元素会出现在正常的文档流中，会叠在低下
+		.clearFix {
+			float: left; 
+		}
+		.clearFix1 {
+			clear: left;
+		}*/
+		/*6 父元素绝对定义，不推荐，依然会使跟在父元素后面的元素出现跌在底下*/
+		.clearFix {
+			position: absolute;
+		}
+		.footer {
+			position: relative;
+			top: 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="outer clearFix">
+		<div class="inner"></div>
+		<div class="inner"></div>
+		<div class="inner"></div>
+		<!-- <div class="clearFix"></div> -->
+	</div>
+	<div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		ul {
+			width: 200px;
+		}
+		li {
+			width: 50px;
+			height: 50px;
+			background-color: yellow;
+			border: 1px solid #000;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<!-- 浮动元素会自动变为块级元素 -->
+		<!-- 块级元素可以设置宽高，而行内元素无法设置宽高 -->
+	<div style="height: 200px; width: 200px">
+		<span style="float: left; width: 150px; height: 150px; margin: 5px; padding: 5px; border: solid 1px red; background-color: olive">浮动元素</span>
+	</div>
+	<div style="height: 200px; width: 200px">
+		<span style="width: 150px; height: 150px; margin: 5px; padding: 5px; border: 1px solid red; background-color: olive">非浮动元素</span>
+	</div>
+	
+	<div style="width: 600px; height: 500px; border: 1px solid blue; background-color: yellow">
+		<div style="float: left; width: 250px; height: 250px; border: solid 1px aqua; background-color: gray; margin: 10px 0 0 10px">浮动的div</div>
+		<div style="background-color: red; border: 1px solid green; width: 300px; height: 150px">
+			跟着浮动元素后面的div
+		</div>
+		<span style="background-color: red; border:solid 1px green; margin-left: -50px">
+			跟着浮动元素后面的span元素
+		</span>
+	</div>
+<!-- 	浮动元素后边的元素若是非浮动行内元且因为定位产生重叠时，行内元素的边框，背景和内容都在该浮动元素之上显示，若是非浮动块级元素跟在浮动元素后边且在定位后产生重叠时，该块级元素边框和背景在浮动元素之下显示，只有内容不在浮动元素之下显示。 -->
+	<ul>
+		<li>1</li>
+		<li style="height: 100px">2</li>
+		<li>3</li>
+		<li style="height: 100px">4</li>
+		<li>5</li>
+		<li>6</li>
+	</ul>
+
+	网页自适应
+	<!-- padding-top,padding-bottom: 可以控制div的高度 -->
+
+	viewport 响应式
+	width: 控制viewport的大小，可以指定一个值，如device-width为设备的宽度(单位为缩放为100%时的css的像素)
+	height: 和width相对应，指定高度
+	initial-scale: 初始缩放比例，也即当前页面第一次load的时候的缩放比例 位1.0表示按页面实际尺寸显示
+	maximum-scale: 允许用户缩放到最大比例
+	minimum-scale:允许用户缩放到最小的比例
+	user-scalable:用户是否可以收到缩放;
+</body>
+</html>
