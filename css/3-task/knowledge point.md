@@ -30,3 +30,15 @@
 			  等高布局
 			  详细地址：http://www.zhangxinxu.com/wordpress/2010/10/%E6%88%91%E6%89%80%E7%9F%A5%E9%81%93%E7%9A%84%E5%87%A0%E7%A7%8Ddisplaytable-cell%E7%9A%84%E5%BA%94%E7%94%A8/
 
+	position: absolute; 
+		在绝对定位下 ，可以设置top，left，right，bottom 自动拉伸元素，不用设置高度宽度；
+	当尺寸限制，拉伸以及marigin:auto同时出现的时候，就会有绝对定位元素绝对居中的效果
+		对于position为absolute和fixed的元素，同时设置left、right和width，即可由margin:auto水平居中；
+同理，top、bottom、height即可设置垂直居中。
+
+	css3: user-select: none | text | all | element
+		默认值 text
+		none 文本不能被选中，text 可以选择文本
+		all 当所有内容作为一个整体时可以被选中，如果双击或者上下文点击子元素，那么被选中的部分将是以该子元素向上回溯的最高祖先元素
+		element：可以选择文本，但选择范围受元素边界的约束
+	
