@@ -42,3 +42,17 @@
 		all 当所有内容作为一个整体时可以被选中，如果双击或者上下文点击子元素，那么被选中的部分将是以该子元素向上回溯的最高祖先元素
 		element：可以选择文本，但选择范围受元素边界的约束
 	
+
+ 隐形改变display类型: 
+ 		元素设置了position：absolute，或者float：left/right 时， 元素的display显示类型就会自动改变成display:inline-block，这样就是可以设置宽度，默认宽度沾满父元素
+
+
+ 		vertical-align: middle 设置垂直居中的位置， 把元素放在父元素的中部，如果是有图片，给图片定义此样式
+
+ viewport 响应式
+	width: 控制viewport的大小，可以指定一个值，如device-width为设备的宽度(单位为缩放为100%时的css的像素)
+	height: 和width相对应，指定高度
+	initial-scale: 初始缩放比例，也即当前页面第一次load的时候的缩放比例 位1.0表示按页面实际尺寸显示
+	maximum-scale: 允许用户缩放到最大比例
+	minimum-scale:允许用户缩放到最小的比例
+	user-scalable:用户是否可以收到缩放;

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="vieport" content="device-width, intial-scale=1.0, mini-scale=10">
+	<!-- <meta http-equiv="refresh" content="3"> -->
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: "微软雅黑";
+			width: 640px;
+			margin: 0 auto;
+			background: #ebebeb;
+		}
+		a {
+			text-decoration: none;
+		}
+		/*导航*/
+		.header {
+			width: 100%;
+			height: 70px;
+			background-color: #22292c;
+			text-align: center;
+		}
+		.header-left {
+			color: #fff;
+			font-size: 23px;
+			display: block;
+			line-height: 23px;
+			margin: 17px;
+			float: left;
+		}
+		.header-left img {
+			vertical-align: middle;
+		}
+		.header h1 {
+			display: inline;
+			line-height: 70px;
+			font-size: 32px; 
+			color: #fff;
+			font-weight: 400;
+		}
+		.header-right {
+			float: right;
+			margin: 17px;
+		}
+
+	/*内容*/
+		.main {
+			margin: 0;
+			height: 100%;
+			width: 100%;
+			background-color: #68cdd5;
+			position: relative;
+			clear: left;
+		}
+		.main > img:first-child {
+			margin: 17px 0px 0px 34px;
+			cursor: pointer;
+		}
+		.logo {
+			display: block;
+			margin: 110px 0 0 197px;
+		}
+		.main > p {
+			font-size: 30px;
+			line-height: 50px;
+			margin: 113px 80px 0 94px;
+			color: #fff;
+		}
+
+		.tag {
+			float: left;
+			margin: 160px 75px 160px 120px;
+		}
+		.tag p {
+			color: #fff;
+			text-align: center;
+			font-size: 20px;
+		}
+		/*清楚浮动*/
+		.main:after {  
+			content: "";
+			display: block;
+			clear: both;
+			visibility: hidden;
+		}
+
+		/*边框阴影*/ 
+		.header, .main {
+			/*box-shadow: 0px 1px 2px red;*/
+
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<a href="#" class="header-left">
+			<img src="img/nav-left.png" alt="left">
+			返回
+		</a>
+		<h1>魔镜</h1>
+		<a href="#" class="header-right"><img src="img/nav-right.png" alt=""></a>
+	</div>
+	<div class="main">
+		<img src="img/main-left.png" alt="left" class="main-left">
+		<img src="img/logo.png" alt="logo" class="logo">
+		<p>葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以下线下聚会桌游道具</p>
+		<div class="tag">
+			<img src="img/number.png" alt="number">
+			<p>290560933</p>
+		</div>
+		<div class="tag">
+			<img src="img/english.png" alt="english">
+			<p>BJPTTeng</p>
+		</div>
+	</div>
+</body>
+</html>
