@@ -1,0 +1,194 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+	background-color: #c5c5c5;
+}
+body {
+	width: 100%;
+	/*max-width: 60rem;*/
+	margin: 0 auto;
+}
+.header {
+	position: fixed;
+	width: 100%;
+	/*max-width: 60rem;*/
+	color: #fff;
+	text-align: center;
+	background-color: #5fc0cd;
+	z-index: 3000;
+}
+.header h1 {
+	height: 6.6rem;
+	font-size: 2.5rem;
+	line-height: 6.6rem;
+	font-weight: 400;
+	text-indent: -3rem;
+}
+.header a {
+	float: left;
+	background: url(img/back.png) no-repeat;
+	width: 2.5rem;
+	height: 4.3rem;
+	margin: 1rem 1.5rem;
+}
+
+.main {
+	width: 100%;
+	background-color: #fff;
+	padding-top: 6.6rem;
+	padding-bottom: 18rem;
+}
+.bg {
+	background: url(img/bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.bg img {
+	display: inline-block;
+	width: 14rem;
+	height: 14rem;
+	margin: 10% 2%;
+	vertical-align: middle;
+}
+
+.bg .massge {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 3%;
+	color: #fff;
+	font-weight: 300;
+}
+.massge h2 {
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+	font-weight: 300;
+	padding-bottom: 2rem;
+	letter-spacing: 0.2rem;
+}
+.massge p {
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	text-indent: 3rem;
+}
+.massge > i {
+	position: absolute;
+	background: url(img/position-3.gif) no-repeat;
+	background-size: 10% 10%
+	border: none;
+	width: 1.5rem;
+	height: 2rem;
+}
+.intro > p {
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+	margin-left: 2.5rem;
+	padding-left: 2.5rem;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+	border-left: 2px solid #5fc0de;
+	letter-spacing: 0.2rem;
+}
+.intro hr {
+	/*margin-top: -7px;*/
+	border: 0;
+	height: 1px;
+	color: #e1e5e7;
+	background-color: #e1e5e7;
+}
+.intro ol {
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+	margin-left: 2.5rem;
+	padding-left: 2.5rem;
+	padding-bottom: 2.5rem;
+	padding-top: 2.5rem;
+	border-bottom: 1px solid #e1e5e7;
+	letter-spacing: 0.2rem;
+}
+.intro ol:first-child span {
+	padding-left: 2.5rem;
+	margin-right: 1.8rem;
+}
+.intro ol:first-child span.left-line {
+	border-left: 1px solid #e1e5e7;
+	padding-left: 5rem;
+}
+.intro ol:first-child  i {
+	position: absolute;
+	background: url(img/start.png) no-repeat;
+	background-size: auto;
+	width: 2.5rem;
+	height: 4rem;
+	margin-top: -0.5rem;
+	/*margin-left: -0.1rem;*/
+}
+.intro ol > i.left-start {
+	margin-left: 1.8rem;
+}
+.intro ul ol:not(:first-child) {
+	color: #999999;
+	list-style-type: none;
+}
+.intro ul ol:not(:first-child) span{
+	margin-left: 2.5rem;
+	padding-left: 2.5rem;
+	border-left: 1px solid #e1e5e7;
+	color: #5a5a5a;
+}
+.intro ul ol:not(:first-child) span.red {
+	color: #e26163
+}
+.intro ul ol:last-child span{
+	display: inline-block;
+	width: 50%;
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	border: none;
+	margin-left: 0;
+	vertical-align: middle;
+	padding-top: 2.0rem;
+	padding-bottom: 2.0rem;
+}
+.intro ul ol:last-child i {
+	display: inline-block;
+	height: 2.5rem;
+	width: 1px;
+	background-color: #e1e5e7;
+	vertical-align: middle;
+	margin-left: 2.5rem;
+}
+.intro ul ol:last-child {
+	margin: 0;
+	padding-left: 5rem;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.footer {
+	width: 100%;
+	/*max-width: 60rem;*/
+	position: fixed;
+	bottom: 2rem;
+}
+.footer a:first-child {
+	float: left;
+	margin-left: 3rem;
+	color: #5fcdcd;
+}
+.footer a:last-child {
+	float: right;
+	margin-right: 3rem;
+	color: #fff;
+	background-color: #5fcdcd;
+}
+.footer a {
+	width: 38%;
+	border: 2px solid #5fcdcd;
+	font-size: 2.5rem;
+	line-height: 7rem;
+	text-align: center;
+	border-radius: 0.8rem;
+	text-decoration: none;
+}
